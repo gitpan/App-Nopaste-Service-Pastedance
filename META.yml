@@ -15,10 +15,10 @@ name: App-Nopaste-Service-Pastedance
 provides:
   App::Nopaste::Service::Pastedance:
     file: lib/App/Nopaste/Service/Pastedance.pm
-    version: 0.02
+    version: 0.04
 requires:
   App::Nopaste: 0
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://github.com/datamuc/App-Nopaste-Service-Pastedance
-version: 0.02
+version: 0.04

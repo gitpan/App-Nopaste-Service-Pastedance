@@ -4,11 +4,11 @@ use warnings;
 use strict;
 use Encode;
 
-our $VERSION = '0.02';
+our $VERSION = '0.04';
 
 use base q[App::Nopaste::Service];
 
-sub uri { $ENV{PASTEDANCE_URL} || 'http://pb.rbfh.de/' }
+sub uri { $ENV{PASTEDANCE_URL} || 'http://paste.perldancer.org/' }
 
 sub fill_form {
     my ($self, $mech) = (shift, shift);
@@ -59,7 +59,7 @@ App::Nopaste::Service::Pastedance - paste to any Pastedance instance
  #!/usr/bin/env perl
  
  export PASTEDANCE_URL= # if unset it defaults to http://pb.rbfh.de/
- exec nopaste -S pastedance "$@"
+ exec nopaste -s Pastedance "$@"
  EOS
 
 =cut
